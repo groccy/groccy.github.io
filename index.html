@@ -71,6 +71,14 @@
             text-align: center;
             margin-top: 20px;
         }
+        .blinking-emoji {
+            animation: blinker 1s linear infinite;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
         .announcements {
             text-align: center;
             margin: 20px 0;
@@ -85,57 +93,63 @@
 </head>
 </head>
 <body>
-    <h1>Shang-Chun (Luke) Lu</h1>
-    <h2 style="font-size: 1.5em;">AI Research Faculty @ NCKU School of Computing and @ AI Startups</h2>
-    <p class="contact">Connect with me at:     
-        <a href="mailto:lukelu0975@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://x.com/groccy1/">X</a>
-        <a href="https://www.linkedin.com/in/shang-chun-luke-lu-0ba29358/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://scholar.google.com/citations?user=lPBJ1okAAAAJ&hl=en" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-        <span title="US Phone"><i class="fas fa-phone"></i> US: (872) 256-8653</span>
-        <span title="TW Phone"><i class="fas fa-phone"></i> TW: +886 6-2757575 # 80981</span>
-    </p>
+    <div class="content">
+        <h1>Shang-Chun (Luke) Lu</h1>
+        <h2 style="font-size: 1.5em;">AI Research Faculty @ NCKU School of Computing and @ AI Startups</h2>
+        <p class="contact">Connect with me at:     
+            <a href="mailto:lukelu0975@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://x.com/groccy1/">X</a>
+            <a href="https://www.linkedin.com/in/shang-chun-luke-lu-0ba29358/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://scholar.google.com/citations?user=lPBJ1okAAAAJ&hl=en" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            <span title="US Phone"><i class="fas fa-phone"></i> US: (872) 256-8653</span>
+            <span title="TW Phone"><i class="fas fa-phone"></i> TW: +886 6-2757575 # 80981</span>
+        </p>
 
-    <div class="announcements">
-        <p>🎉 Exciting News! Our project "AI for Walking Stability Assessment with 3D Virtual Environment Training" has been selected by Nvidia for the 2025 Nvidia Academic Grant Award, granting us 32,000 A100 GPU-Hours!</p>
-        <p>🌟 We’re Hiring! Join our team! We invite brilliant AI researchers and passionate students worldwide, especially those excited about vision AIs, reasoning LLMs, and robotics, to help advance this cutting-edge field!</p>
+        <div class="announcements">
+            <p><span class="blinking-emoji">🎉</span> Exciting News! Our project "AI for Walking Stability Assessment with 3D Virtual Environment Training" has been selected by Nvidia for the 2025 Nvidia Academic Grant Award, granting us 32,000 A100 GPU-Hours!</p>
+            <p><span class="blinking-emoji">🌟</span> We’re Hiring! Join our team! We invite brilliant AI researchers and passionate students worldwide, especially those excited about vision AIs, reasoning LLMs, and robotics, to help advance this cutting-edge field!</p>
+        </div>
+    
+        <p>My research focuses on <strong>Reasoning models, Agentic AI, Large Language Models (LLMs), Vision-Language Models (VLMs), and World Foundation Models for robotics.</strong></p>
+        <p>Expertise in training advanced neural nets at companies including Intel, SanDisk, and more recently, AI startups.</p>
+        <p>I received my <strong>PhD</strong> in <strong>ECE from UIUC</strong> (2019), co-advised at <strong>MIT EECS</strong> 2017-2019, and a bachelor's degree from <strong>NTU Physics</strong> and a master's from <strong>NTU EE</strong>. Over 10 publications and 7 conference presentations.</p>
+    
+    
+        <h2>Work Experience</h2>
+        <ul>
+            <li><strong>AI Research Faculty, Miin Wu School of Computing, NCKU (Feb 2025 – present)</strong>: Launching AI R&D initiatives, including post-training Thinking LLMs/VLMs with advanced reasoning, vision RAG agents for medical use, finetuning Robotics models, and planning AI infrastructure.</li>
+            <li><strong>VLM Advisor/Lead Architect, Rayleigh Vision Intelligence Co. Ltd. (Dec 2024 – present)</strong>: Architecting VLM solutions and coordinating with infra/manufacturing teams to support Micro LED customers.</li>
+            <li><strong>3D Gen AI Consultant, Stealth AI Startup from Stanford University (July 2024 – present)</strong>: Advising on generalized agents for 3D generative AI applications.</li>
+            <li><strong>Head of Gen AI, Rengiantek AI (Dec 2023 – Dec 2024)</strong>: Led projects building RAG Agents with LangGraph, finetuning LLMs for academic peer reviews, and developing fall detection visual AI agents using Nvidia tools for eldercare in large facilities.</li>
+            <li><strong>Staff R&D Engineer, Deep Learning, SanDisk (May 2020 – Nov 2023)</strong>: Led DL projects like training Mask-RCNN/Transformers for wafer inspection (reducing time by 90%+), SAM auto-labelers, LLM fine-tuning for semiconductor data, and VAEs for pattern generation.</li>
+            <li><strong>Personal AI Project (2021 – 2022)</strong>: Used Mask-RCNN, CNN, and GenAI to create digital arts.</li>
+            <li><strong>Transistor Reliability R&D Engineer / Data Scientist, Intel Corp. (May 2019 – May 2020)</strong>: Analyzed transistor reliability using ML models (e.g., regression, random forest) to automate data processing and support process development.</li>
+            <li><strong>Visiting Student Scientist, MIT (Nov 2017 – April 2019)</strong>: Designed post-CMOS transistors and explored materials for quantum computing using DFT + ML and NEGF for electron transport simulations.</li>
+        </ul>
+    
+        <h2>Selected Conferences</h2>
+        <ol>
+            <li>CoVaPh: A Vision-Language Multi-Agent System for Tool-Augmented Pharmacogenetic Reasoning and Personalized Guidance, S.-C. Lu et al., submitted to AAAI-26.</li>
+            <li>Atomistic Design of Multilayer Black Phosphorus Vertical Tunnel FETs based on Coupled DFT and NEGF method, S.-C. Lu et al., 20th IWCN, Evanston, IL, May 20-24, 2019.</li>
+            <li>Design Guidelines and Limitations of Multilayer Two-dimensional Vertical Tunneling FETs for Ultra Low Power Logic Applications, S.-C. Lu et al., SISPAD 2018, Austin, TX, Sept. 24-26, 2018.</li>
+            <li><a href="https://ieeexplore.ieee.org/document/8085335/">Modeling of black phosphorus vertical TFETs without chemical doping for drain</a>, S.-C. Lu et al., SISPAD 2017, Kamakura, Japan, Sept. 7-9, 2017.</li>
+        </ol>
+    
+        <h2>Selected Journal Publications</h2>
+        <ol>
+            <li><a href="https://ieeexplore.ieee.org/document/8625493/">Superior Performance of 5 nm Gate Length GaN Nanowire nFET for Digital Logic Applications</a>, Y. Chu, S.-C. Lu, et al., IEEE Electron Device Letters, vol. 40, no. 6, pp. 874-877, 2019.</li>
+            <li><a href="https://iopscience.iop.org/article/10.1088/2053-1583/3/1/011010/meta">Novel Vertical Hetero- and Homo-junction Designs for Tunnel FETs based on 2D Crystals</a>, S.-C. Lu, M. Mohamed, W. Zhu, 2D Materials 3, 011010, 2016.</li>
+            <li><a href="https://link.springer.com/article/10.1186/1556-276X-9-676">Electronic structures of defects and magnetic impurities in MoS2 monolayers</a>, S.-C. Lu, J.-P. Leburton, Nanoscale Research Letters, 9:676, 2014.</li>
+            <li><a href="https://pubs.aip.org/aip/jap/article/111/7/076105/391440/First-principles-study-of-Ge-dangling-bonds-with">First-principles study of Ge dangling bonds with different oxygen backbonds at Ge/GeO2 interface</a>, H.-C. Chang, S.-C. Lu, T.-P. Chou, et al., J. Appl. Phys. 111, 076105, 2012.</li>
+            <li><a href="https://pubs.aip.org/aip/apl/article/100/2/023508/904129/Surface-passivation-of-Cu-In-Ga-Se2-using-atomic">Surface Passivation of Cu(In,Ga)Se2 Using Atomic Layer Deposited Al2O3</a>, W.-W. Hsu, J. Y. Chen, T.-H. Cheng, et al., Appl. Phys. Lett. 100, 023508, 2012.</li>
+        </ol>    
     </div>
-
-    <p>My research focuses on <strong>Reasoning models, Agentic AI, Large Language Models (LLMs), Vision-Language Models (VLMs), and World Foundation Models for robotics.</strong></p>
-    <p>Expertise in training advanced neural nets at companies including Intel, SanDisk, and more recently, AI startups.</p>
-    <p>I received my <strong>PhD</strong> in <strong>ECE from UIUC</strong> (2019), co-advised at <strong>MIT EECS</strong> 2017-2019, and a bachelor's degree from <strong>NTU Physics</strong> and a master's from <strong>NTU EE</strong>. Over 10 publications and 7 conference presentations.</p>
-
-
-    <h2>Work Experience</h2>
-    <ul>
-        <li><strong>AI Research Faculty, Miin Wu School of Computing, NCKU (Feb 2025 – present)</strong>: Launching AI R&D initiatives, including post-training Thinking LLMs/VLMs with advanced reasoning, vision RAG agents for medical use, finetuning Robotics models, and planning AI infrastructure.</li>
-        <li><strong>VLM Advisor/Lead Architect, Rayleigh Vision Intelligence Co. Ltd. (Dec 2024 – present)</strong>: Architecting VLM solutions and coordinating with infra/manufacturing teams to support Micro LED customers.</li>
-        <li><strong>3D Gen AI Consultant, Stealth AI Startup from Stanford University (July 2024 – present)</strong>: Advising on generalized agents for 3D generative AI applications.</li>
-        <li><strong>Head of Gen AI, Rengiantek AI (Dec 2023 – Dec 2024)</strong>: Led projects building RAG Agents with LangGraph, finetuning LLMs for academic peer reviews, and developing fall detection visual AI agents using Nvidia tools for eldercare in large facilities.</li>
-        <li><strong>Staff R&D Engineer, Deep Learning, SanDisk (May 2020 – Nov 2023)</strong>: Led DL projects like training Mask-RCNN/Transformers for wafer inspection (reducing time by 90%+), SAM auto-labelers, LLM fine-tuning for semiconductor data, and VAEs for pattern generation.</li>
-        <li><strong>Personal AI Project (2021 – 2022)</strong>: Used Mask-RCNN, CNN, and GenAI to create digital arts.</li>
-        <li><strong>Transistor Reliability R&D Engineer / Data Scientist, Intel Corp. (May 2019 – May 2020)</strong>: Analyzed transistor reliability using ML models (e.g., regression, random forest) to automate data processing and support process development.</li>
-        <li><strong>Visiting Student Scientist, MIT (Nov 2017 – April 2019)</strong>: Designed post-CMOS transistors and explored materials for quantum computing using DFT + ML and NEGF for electron transport simulations.</li>
-    </ul>
-
-    <h2>Selected Conferences</h2>
-    <ol>
-        <li>CoVaPh: A Vision-Language Multi-Agent System for Tool-Augmented Pharmacogenetic Reasoning and Personalized Guidance, S.-C. Lu et al., submitted to AAAI-26.</li>
-        <li>Atomistic Design of Multilayer Black Phosphorus Vertical Tunnel FETs based on Coupled DFT and NEGF method, S.-C. Lu et al., 20th IWCN, Evanston, IL, May 20-24, 2019.</li>
-        <li>Design Guidelines and Limitations of Multilayer Two-dimensional Vertical Tunneling FETs for Ultra Low Power Logic Applications, S.-C. Lu et al., SISPAD 2018, Austin, TX, Sept. 24-26, 2018.</li>
-        <li><a href="https://ieeexplore.ieee.org/document/8085335/">Modeling of black phosphorus vertical TFETs without chemical doping for drain</a>, S.-C. Lu et al., SISPAD 2017, Kamakura, Japan, Sept. 7-9, 2017.</li>
-    </ol>
-
-    <h2>Selected Journal Publications</h2>
-    <ol>
-        <li><a href="https://ieeexplore.ieee.org/document/8625493/">Superior Performance of 5 nm Gate Length GaN Nanowire nFET for Digital Logic Applications</a>, Y. Chu, S.-C. Lu, et al., IEEE Electron Device Letters, vol. 40, no. 6, pp. 874-877, 2019.</li>
-        <li><a href="https://iopscience.iop.org/article/10.1088/2053-1583/3/1/011010/meta">Novel Vertical Hetero- and Homo-junction Designs for Tunnel FETs based on 2D Crystals</a>, S.-C. Lu, M. Mohamed, W. Zhu, 2D Materials 3, 011010, 2016.</li>
-        <li><a href="https://link.springer.com/article/10.1186/1556-276X-9-676">Electronic structures of defects and magnetic impurities in MoS2 monolayers</a>, S.-C. Lu, J.-P. Leburton, Nanoscale Research Letters, 9:676, 2014.</li>
-        <li><a href="https://pubs.aip.org/aip/jap/article/111/7/076105/391440/First-principles-study-of-Ge-dangling-bonds-with">First-principles study of Ge dangling bonds with different oxygen backbonds at Ge/GeO2 interface</a>, H.-C. Chang, S.-C. Lu, T.-P. Chou, et al., J. Appl. Phys. 111, 076105, 2012.</li>
-        <li><a href="https://pubs.aip.org/aip/apl/article/100/2/023508/904129/Surface-passivation-of-Cu-In-Ga-Se2-using-atomic">Surface Passivation of Cu(In,Ga)Se2 Using Atomic Layer Deposited Al2O3</a>, W.-W. Hsu, J. Y. Chen, T.-H. Cheng, et al., Appl. Phys. Lett. 100, 023508, 2012.</li>
-    </ol>    
+    <footer>
+        <p>&copy; 2025 Shang-Chun (Luke) Lu. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
 
 
 
