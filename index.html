@@ -65,29 +65,28 @@
         .content {
             flex: 1 0 auto;
         }
+        .announcements {
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #5d6d7e; /* Lighter text color */
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards; /* Fade-in on load */
+        }
+        .announcements p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
         /* Footer-like behavior for the bottom */
         footer {
             flex-shrink: 0;
             text-align: center;
             margin-top: 20px;
         }
-        .blinking-emoji {
-            animation: blinker 1s linear infinite;
-        }
-        @keyframes blinker {
-            50% {
-                opacity: 0;
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
             }
-        }
-        .announcements {
-            text-align: center;
-            margin: 20px 0;
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        .announcements p {
-            margin: 10px 0;
-            font-size: 1.1em;
         }
     </style>
 </head>
@@ -149,6 +148,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
